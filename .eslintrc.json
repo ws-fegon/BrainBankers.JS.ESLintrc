@@ -13,14 +13,15 @@
 		"node": true
 	},
 	"globals": {
+		"Promise": false,
 		"require": false,
 		"angular": false,
+		"__weather": false,
 		"__baseDir": false,
-		"__application": false,
-		"__weather": false
+		"__application": false
 	},
 	"rules": {
-		"no-use-before-define":"off",
+		"max-len":"off",
 		"no-underscore-dangle":"off",
 		"no-path-concat":"off",
 		"prefer-template":"off",
@@ -36,7 +37,6 @@
 			"inside"
 		],
 		"import/no-dynamic-require": "off",
-		"prefer-template": "off",
 		"prefer-arrow-callback": "off",
 		"spaced-comment": ["error", "always"],
 		"func-names": "off",
