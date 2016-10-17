@@ -1,0 +1,121 @@
+{
+	"eslint.root": true,
+	"parserOptions": {
+		"ecmaVersion": 3,
+		"sourceType" : "module",
+		"ecmaFeatures": {
+			"globalReturn": true
+		}
+	},
+	"extends": "airbnb-base",
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"globals": {
+		"require": false,
+		"angular": false,
+		"__baseDir": false,
+		"__application": false,
+		"__weather": false
+	},
+	"rules": {
+		"no-use-before-define":"off",
+		"no-underscore-dangle":"off",
+		"no-path-concat":"off",
+		"prefer-template":"off",
+		"no-unused-vars": [
+			"error",
+			{
+				"args": "after-used"
+			}
+		],
+		"no-else-return" : "off",
+		"wrap-iife": [
+			"error",
+			"inside"
+		],
+		"import/no-dynamic-require": "off",
+		"prefer-template": "off",
+		"prefer-arrow-callback": "off",
+		"spaced-comment": ["error", "always"],
+		"func-names": "off",
+		"strict": "off",
+		"no-multi-spaces": [
+			"error",
+			{
+				"exceptions": {
+					"VariableDeclarator": true
+				}
+			}
+		],
+		"global-require": "off",
+		"no-var": "off",
+		"indent": [
+			"error",
+			"tab"
+		],
+		"no-tabs": "off",
+		"curly": [
+			"error",
+			"all"
+		],
+		"key-spacing": [
+			"error",
+			{
+				"multiLine": {
+					"beforeColon": true,
+					"afterColon": true,
+					"align": "colon"
+				}
+			}
+		],
+		"space-before-function-paren": [
+			"error",
+			"always"
+		],
+		"operator-linebreak": [
+			"error",
+			"after"
+		],
+		"no-param-reassign": "off",
+		"newline-per-chained-call": [
+			"error",
+			{
+				"ignoreChainWithDepth": 2
+			}
+		],
+		"max-statements-per-line": [
+			"error",
+			{
+				"max": 1
+			}
+		],
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxBOF": 0,
+				"maxEOF": 1
+			}
+		],
+		"object-property-newline": [
+			"error",
+			{
+				"allowMultiplePropertiesPerLine": false
+			}
+		],
+		"array-bracket-spacing": [
+			"error",
+			"always"
+		],
+		"func-style": [
+			"error",
+			"declaration"
+		],
+		"computed-property-spacing": [
+			"error",
+			"always"
+		]
+	}
+}
